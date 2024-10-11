@@ -6,7 +6,7 @@
 /*   By: pchi <pchi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 18:21:07 by pchi              #+#    #+#             */
-/*   Updated: 2024/08/29 15:57:23 by pchi             ###   ########.fr       */
+/*   Updated: 2024/10/11 17:30:08 by pchi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <errno.h>
 # include <fcntl.h>
 # include <sys/wait.h>
-# include "./libft/libft.h"
+# include "libft/libft.h"
 
 typedef struct s_proc
 {

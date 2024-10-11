@@ -6,7 +6,7 @@
 /*   By: pchi <pchi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 17:23:09 by pchi              #+#    #+#             */
-/*   Updated: 2024/10/09 20:41:03 by pchi             ###   ########.fr       */
+/*   Updated: 2024/10/11 18:07:17 by pchi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@
 // 	return (0);
 // }
 /*需要减2行*/
-// if (*envp == NULL)
-// 	return ;
 void	find_path(char **envp, t_proc *child)
 {
 	char	**paths;
@@ -43,7 +41,6 @@ void	find_path(char **envp, t_proc *child)
 	paths = ft_split((*envp + 5), ':');
 	if (paths == NULL)
 		return ;
-	child->path = NULL;
 	i = -1;
 	while (paths[++i] && child->cmd_arr[0])
 	{
